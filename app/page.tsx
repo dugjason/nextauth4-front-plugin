@@ -1,4 +1,5 @@
 import { SessionInfo } from "@/components/session-info";
+import Link from "next/link";
 
 export default async function Home() {
   return (
@@ -6,6 +7,10 @@ export default async function Home() {
       <div className="relative flex items-center justify-center border border-black">
         <SessionInfo />
       </div>
+      <Link href="/secure" className="underline text-blue-400">
+        {" "}
+        Go to secure page
+      </Link>
     </main>
   );
 }

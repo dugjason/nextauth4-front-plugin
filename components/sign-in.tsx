@@ -12,7 +12,6 @@ export const SignInPageClient = ({ user }: { user: any }) => {
       });
 
     if (user) {
-      console.log("WE HAVE A USER", user);
       window.opener.postMessage(
         { user },
         process.env.NEXT_PUBLIC_FRONTEND_URL as string
